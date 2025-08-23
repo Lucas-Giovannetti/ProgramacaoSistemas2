@@ -33,17 +33,17 @@ public class AppStreaming{
 }
 
  private static void adicionarFilme() {
-        System.out.print("Título do filme: ");
-        String titulo = sca.nextLine();
-        System.out.print("Duração: ");
+        System.out.println("Título do filme: ");
+        String titulo = sca.next();
+        System.out.println("Duração: ");
         int duracao = sca.nextInt();
 
         Filme f = new Filme(titulo, duracao);
         midias.add(f);
     }
     private static void adicionarSerie() {
-        System.out.print("Título da série: ");
-        String titulo = sca.nextLine();
+        System.out.println("Título da série: ");
+        String titulo = sca.next();
 
         Serie s = new Serie(titulo);
 
