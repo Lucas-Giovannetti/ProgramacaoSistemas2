@@ -1,0 +1,21 @@
+class CriterioPreco implements CriterioBusca {
+    private double precoMaximo;
+    private double precoMinimo;
+    
+    public PrecoMaximo(double precoMaximo) {
+        this.precoMaximo = precoMaximo;
+    }
+
+    public boolean testarMax(Produto p, String valor) {
+        return p.getPreco() <= precoMaximo;
+    }
+
+
+    public PrecoMinimo(double precoMinimo) {
+        this.precoMinimo = precoMinimo;
+    }
+
+    public boolean testarMin(Produto p, String valor) {
+        return p.getPreco() >= precoMinimo;
+    }
+}
